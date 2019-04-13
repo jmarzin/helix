@@ -4,7 +4,8 @@ extern crate helix;
 ruby! {
     class GpxTraite {
         def hello(s: String) -> String {
-            s
+            let s2 = String::from(" Jacques");
+            s + &s2
         }
     }
 }
