@@ -4,7 +4,13 @@
     <shared />
   </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/../../crates/gpx_traite" />
+    <content url="file://$MODULE_DIR$/../../crates/gpx_traite">
+      <sourceFolder url="file://$MODULE_DIR$/../../crates/gpx_traite/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../crates/gpx_traite/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../crates/gpx_traite/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../crates/gpx_traite/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../crates/gpx_traite/target" />
+    </content>
     <orderEntry type="jdk" jdkName="RVM: ruby-2.6.2" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.0.1, RVM: ruby-2.6.2) [gem]" level="application" />
