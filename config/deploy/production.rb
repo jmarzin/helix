@@ -60,4 +60,4 @@
 #     # password: "please use keys"
 #   }
 set :linked_files, %w{config/master.key}
-set :linked_files, %w{public/gpx}
+set :linked_dirs, %w{public/gpx}
