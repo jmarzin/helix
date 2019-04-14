@@ -6,7 +6,6 @@ require 'capistrano/rails'
 require 'capistrano/bundler'
 require 'capistrano/rvm'
 require 'capistrano/puma'
-require 'capistrano/rake'
 
 install_plugin Capistrano::Puma
 
