@@ -7,3 +7,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 helix = "0.7.5"
+quick-xml = "0.13.3"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"

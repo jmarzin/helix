@@ -69,18 +69,6 @@ namespace :deploy do
     end
   end
 
-  desc 'Compile Rust'
-  task :rust do
-    on roles(:app) do
-      within release_path do
-        with rails_env: fetch(:rails_env) do
-          execute "pwd"
-          execute :rake, "build"
-        end
-      end
-    end
-  end
-
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
@@ -90,7 +78,6 @@ namespace :deploy do
 
   before :starting,     :check_revision
   after  :finishing,    :compile_assets
-  after :finishing, :rust
   after  :finishing,    :cleanup
   after  :finishing,    :restart
 end
